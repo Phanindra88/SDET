@@ -1,0 +1,18 @@
+# Accessing the class members within and outside the class
+
+class Sample:
+    a = 100 # public
+    __b = 200 # private
+    _c = 300 # protected
+    def display(self):
+        print("Accessing the class members within the class")
+        print("a = ",Sample.a)
+        print("b = ",Sample.__b)
+        print("c = ",Sample._c)
+
+s1 = Sample()
+s1.display()
+print("Accessing the class members outside the class")
+print("a = ",Sample.a)
+#print("b = ",Sample.__b)
+print("c = ",Sample._c)
